@@ -1,0 +1,73 @@
+.forside {
+  background-image: url(../imgs/forside.jpg);
+  background-color: hotpink;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+
+.navbar {
+  justify-content: right;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+.navbar ul {
+  list-style-type: none;
+  font-size: 2vw;
+  font-family: michro;
+}
+
+.navbar a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  transition: border-bottom 0.2s;
+}
+
+.navbar a.logo {
+  float: left;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.titel {
+  font-size: 7vw;
+  text-align: center;
+  margin-top: 15%;
+  font-family: michro;
+}
+
+.undertitel {
+  font-size: 4.5vw;
+  text-align: center;
+  color: white;
+  font-family: michro;
+}
+
+@media screen and (max-width: 800px) {
+  .forside {
+    background-image: url(../imgs/forside.jpg);
+    background-color: hotpink;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 190%;
+  }
+  .undertitel {
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    font-family: michro;
+  }
+}

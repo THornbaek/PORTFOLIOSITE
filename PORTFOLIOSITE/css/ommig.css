@@ -1,0 +1,126 @@
+.ommig {
+  background-image: url(../imgs/ommig.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 370%;
+}
+
+img {
+  width: 100%;
+}
+
+/* Grid opsætning */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 950px;
+  margin: 20px auto;
+  gap: 20px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 130%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  font-family: oxy;
+  font-size: 90%;
+  margin-right: 10%;
+  margin-top: 30%;
+}
+
+.textbox {
+  padding: 20px;
+  border: 3px solid #fff; /* Hvid kant */
+  grid-column: span 2;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  font-family: oxy;
+  font-size: 1.4vw;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* NAVBAR */
+.navbar {
+  justify-content: right;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0px 20px;
+  border: 1px solid transparent;
+  transition: 0, 5 ease;
+}
+
+.navbar ul {
+  list-style-type: none;
+  font-size: 2vw;
+  font-family: michro;
+}
+
+.navbar a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  transition: border-bottom 0.2s;
+}
+
+.navbar a.logo {
+  float: left;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+footer {
+  color: rgb(196, 26, 83);
+  margin-top: 5%;
+  margin-left: 90%;
+  margin-bottom: 2%;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .ommig {
+    background-image: url(../imgs/ommig.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 500%;
+  }
+
+  p {
+    text-align: center;
+    font-family: oxy;
+    font-size: 1.7vw;
+    margin-right: 15%;
+    margin-top: 15%;
+  }
+
+  .textbox {
+    padding: 20px;
+    border: 3px solid #fff; /* Hvid kant */
+    grid-column: span 2;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    font-family: oxy;
+    font-size: 2vw;
+  }
+}

@@ -1,0 +1,127 @@
+body {
+  background-color: rgba(247, 248, 231, 1);
+}
+
+.mineprojekter {
+  background-color: rgba(247, 248, 231, 1);
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+}
+
+.projekt-container {
+  display: flex;
+}
+
+img {
+  width: 85%;
+  margin: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Projekt præsentation */
+
+.projekt1 {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(247, 248, 231, 1);
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: oxy;
+  font-size: 1vw;
+}
+
+.projekt1:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: oxy;
+}
+
+/* NAVBAR */
+.navbar {
+  justify-content: right;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0px 20px;
+  border: 1px solid transparent;
+  transition: 0, 5 ease;
+}
+
+.navbar ul {
+  list-style-type: none;
+  font-size: 2vw;
+  font-family: michro;
+}
+
+.navbar a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  transition: border-bottom 0.2s;
+}
+
+.navbar a.logo {
+  float: left;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+footer {
+  color: rgb(196, 26, 83);
+  margin-top: 5%;
+  margin-left: 90%;
+  margin-bottom: 2%;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  /* Anvend disse regler, når skærmbredden er 600px eller mindre (typisk mobilskærme) */
+  .projekt-container {
+    flex-direction: column; /* Ændr retningen til kolonne på mindre skærme */
+    align-items: center; /* Centrer elementer i kolonne */
+  }
+
+  img {
+    margin: 10px 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 248, 231, 1);
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: oxy;
+    font-size: 3vw;
+  }
+}
